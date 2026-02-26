@@ -142,7 +142,6 @@ int assemble(FILE *a, FILE *b) {
                     | ((rs2 & 7) << 3)
                     | (imm6 & 7);
 
-//            rom[i++] = (opcode&15)<<12 | (rs2&7)<<9 | (rs1&7)<<6 | (imm&0x3f);
             
             printf("at 0x%04x, assembled instruction: 0x%04X\n", i,  rom[i-1]);
         break;
